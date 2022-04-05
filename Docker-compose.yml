@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node: 
+    build: .
+    env_file: ./.env
+    ports:
+      - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
+    stdin_open: true
+    tty: true
+    
